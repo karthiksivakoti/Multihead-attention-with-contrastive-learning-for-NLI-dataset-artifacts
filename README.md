@@ -1,4 +1,4 @@
-# NLI Dataset Artifact Analysis and Debiasing 🔍
+# NLI Dataset Artifact Analysis and Debiasing using multi-artifact attention 🔍
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)](https://pytorch.org/)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg?style=for-the-badge)](https://www.python.org/)
@@ -36,7 +36,7 @@ This repository implements a novel multi-head debiasing architecture for Natural
 
 ```python
 Bias Type Improvements:
-- Length:    +3.53%
-- Overlap:   +2.68%
-- Subset:    +0.78%
-- Negation:  +7.48%
+- Length:    +4.68%
+- Overlap:   +1.36%
+- Subset:    +1.11%
+- Negation:  +6.71%
