@@ -1,0 +1,20 @@
+{
+  "total_errors": 1026,
+  "error_types": {
+    "Contradiction \u2192 Neutral": 190,
+    "Neutral \u2192 Entailment": 253,
+    "Contradiction \u2192 Entailment": 85,
+    "Entailment \u2192 Contradiction": 56,
+    "Neutral \u2192 Contradiction": 226,
+    "Entailment \u2192 Neutral": 216
+  },
+  "error_distribution": {
+    "Neutral \u2192 Entailment": 253,
+    "Neutral \u2192 Contradiction": 226,
+    "Entailment \u2192 Neutral": 216,
+    "Contradiction \u2192 Neutral": 190,
+    "Contradiction \u2192 Entailment": 85,
+    "Entailment \u2192 Contradiction": 56
+  },
+  "error_rate": 0.10424710424710425
+}

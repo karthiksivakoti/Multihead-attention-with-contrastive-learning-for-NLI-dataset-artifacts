@@ -1,0 +1,112 @@
+Top 20 Improvements for negation_bias
+
+Example 1:
+Premise: Two male police officers on patrol, wearing the normal gear and bright green reflective shirts.
+Hypothesis: The officers have shot an unarmed black man and will not go to prison for it.
+Gold Label: 2
+Baseline: 1 (conf: 0.547)
+Debiased: 2 (conf: 0.977)
+Why Baseline Failed: Presence of negation words likely triggered automatic contradiction prediction
+Why Debiased Succeeded: Model considered full context beyond negation words
+
+--------------------------------------------------------------------------------
+Example 2:
+Premise: A fire hydrant with a face painted on it.
+Hypothesis: A fire hydrant is not just yellow or red.
+Gold Label: 0
+Baseline: 1 (conf: 0.609)
+Debiased: 0 (conf: 0.976)
+Why Baseline Failed: Presence of negation words likely triggered automatic contradiction prediction
+Why Debiased Succeeded: Model considered full context beyond negation words
+
+--------------------------------------------------------------------------------
+Example 3:
+Premise: Female runners from Japan, Germany and China are running side by side.
+Hypothesis: The runners are not from the US
+Gold Label: 0
+Baseline: 2 (conf: 0.624)
+Debiased: 0 (conf: 0.935)
+Why Baseline Failed: Presence of negation words likely triggered automatic contradiction prediction
+Why Debiased Succeeded: Model considered full context beyond negation words
+
+--------------------------------------------------------------------------------
+Example 4:
+Premise: A football team getting ready for the coin toss in a half empty stadium.
+Hypothesis: The stadium is not full.
+Gold Label: 0
+Baseline: 2 (conf: 0.680)
+Debiased: 0 (conf: 0.948)
+Why Baseline Failed: Length difference of 9 words may have biased the model; Presence of negation words likely triggered automatic contradiction prediction
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 5:
+Premise: A young boy with sandy blond-hair and white and black soccer uniform kicking for the goal while parents look on.
+Hypothesis: The boy's parents are not present.
+Gold Label: 2
+Baseline: 0 (conf: 0.483)
+Debiased: 2 (conf: 0.710)
+Why Baseline Failed: Length difference of 14 words may have biased the model; Presence of negation words likely triggered automatic contradiction prediction
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 6:
+Premise: Four men are playing soccer, two in white jerseys, one in a red jersey and a goalie in the background.
+Hypothesis: The soccer players uniforms, while colorful are not very comfortable to wear.
+Gold Label: 1
+Baseline: 0 (conf: 0.586)
+Debiased: 1 (conf: 0.778)
+Why Baseline Failed: Length difference of 8 words may have biased the model; Presence of negation words likely triggered automatic contradiction prediction
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 7:
+Premise: A man in a black shirt sits beneath a'no child left behind' powerpoint presentation.
+Hypothesis: The man sitting beneath the presentation had no shirt on.
+Gold Label: 2
+Baseline: 0 (conf: 0.808)
+Debiased: 2 (conf: 0.983)
+Why Baseline Failed: Presence of negation words likely triggered automatic contradiction prediction
+Why Debiased Succeeded: Model considered full context beyond negation words
+
+--------------------------------------------------------------------------------
+Example 8:
+Premise: images are missing images are missing images are missing images are missing images are missing images are missing
+Hypothesis: There are no images.
+Gold Label: 0
+Baseline: 2 (conf: 0.838)
+Debiased: 0 (conf: 0.969)
+Why Baseline Failed: Length difference of 14 words may have biased the model; Presence of negation words likely triggered automatic contradiction prediction
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 9:
+Premise: There is not an image here.
+Hypothesis: No image can be seen.
+Gold Label: 0
+Baseline: 2 (conf: 0.953)
+Debiased: 0 (conf: 0.977)
+Why Baseline Failed: Presence of negation words likely triggered automatic contradiction prediction
+Why Debiased Succeeded: Model considered full context beyond negation words
+
+--------------------------------------------------------------------------------
+Example 10:
+Premise: A man in a wheelchair is being pushed towards a monk.
+Hypothesis: The person can not walk.
+Gold Label: 0
+Baseline: 2 (conf: 0.633)
+Debiased: 0 (conf: 0.524)
+Why Baseline Failed: Length difference of 6 words may have biased the model; Presence of negation words likely triggered automatic contradiction prediction
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 11:
+Premise: A white-haired conductor is standing in front of an orchestra which is also standing, instruments in hand.
+Hypothesis: The conductor and orchestra are not sitting because the crowd is cheering.
+Gold Label: 1
+Baseline: 2 (conf: 0.573)
+Debiased: 1 (conf: 0.461)
+Why Baseline Failed: Presence of negation words likely triggered automatic contradiction prediction
+Why Debiased Succeeded: Model considered full context beyond negation words
+
+--------------------------------------------------------------------------------

@@ -1,0 +1,12 @@
+Top 20 Improvements for subset_bias
+
+Example 1:
+Premise: A man in a blue shirt, khaki shorts, ball cap and white socks and loafers walking behind a group of people walking down a stone walkway with a water bottle in his left hand.
+Hypothesis: A man in a blue shirt, khaki shorts, ball cap and blue socks and loafers walking behind a group of people walking down a stone walkway with a water bottle in his left hand.
+Gold Label: 2
+Baseline: 0 (conf: 0.917)
+Debiased: 2 (conf: 0.967)
+Why Baseline Failed: High lexical overlap (1.00) likely influenced prediction; Hypothesis words being subset of premise may have caused bias
+Why Debiased Succeeded: Model correctly focused on semantic meaning despite high overlap
+
+--------------------------------------------------------------------------------

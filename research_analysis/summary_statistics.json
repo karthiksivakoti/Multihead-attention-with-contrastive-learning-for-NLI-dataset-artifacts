@@ -1,0 +1,13 @@
+{
+  "total_examples": 9842,
+  "average_confidence": 0.9294377665613222,
+  "length_difference_stats": {
+    "mean": 6.96230440967283,
+    "std": 5.966742268926896
+  },
+  "overlap_score_stats": {
+    "mean": 0.5354036976751928,
+    "std": 0.25392808109703224
+  },
+  "accuracy": 0.8957528957528957
+}

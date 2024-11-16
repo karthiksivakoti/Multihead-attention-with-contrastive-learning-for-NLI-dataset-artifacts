@@ -1,0 +1,38 @@
+{
+  "overall_confusion_matrix": [
+    [
+      3057,
+      216,
+      56
+    ],
+    [
+      253,
+      2756,
+      226
+    ],
+    [
+      85,
+      190,
+      3003
+    ]
+  ],
+  "high_overlap_confusion_matrix": [
+    [
+      1065,
+      37,
+      14
+    ],
+    [
+      29,
+      211,
+      11
+    ],
+    [
+      14,
+      5,
+      215
+    ]
+  ],
+  "high_overlap_count": 1601,
+  "total_count": 9842
+}

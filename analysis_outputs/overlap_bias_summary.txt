@@ -1,0 +1,92 @@
+Top 20 Improvements for overlap_bias
+
+Example 1:
+Premise: A group of teenagers are standing in front of some tents, most of them are holding skateboards.
+Hypothesis: A group of teenagers are jumping
+Gold Label: 2
+Baseline: 0 (conf: 0.452)
+Debiased: 2 (conf: 0.953)
+Why Baseline Failed: Length difference of 11 words may have biased the model; High lexical overlap (0.83) likely influenced prediction
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 2:
+Premise: Three people are outside walking up a set of wooden stairs.
+Hypothesis: Three people are walking outside down a set of stairs.
+Gold Label: 2
+Baseline: 0 (conf: 0.500)
+Debiased: 2 (conf: 0.995)
+Why Baseline Failed: High lexical overlap (0.90) likely influenced prediction
+Why Debiased Succeeded: Model correctly focused on semantic meaning despite high overlap
+
+--------------------------------------------------------------------------------
+Example 3:
+Premise: A young blond child wearing only a diaper sits on a large rock at the edge of a body of water while a large black dog stands in the water nearby.
+Hypothesis: A dog sits on a rock alone.
+Gold Label: 2
+Baseline: 0 (conf: 0.424)
+Debiased: 2 (conf: 0.830)
+Why Baseline Failed: Length difference of 24 words may have biased the model; High lexical overlap (0.83) likely influenced prediction
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 4:
+Premise: Two women are posing with the Naked Cowboy in Times Square, New York City.
+Hypothesis: Two women are touring New York City.
+Gold Label: 1
+Baseline: 0 (conf: 0.610)
+Debiased: 1 (conf: 0.950)
+Why Baseline Failed: Length difference of 7 words may have biased the model; High lexical overlap (0.86) likely influenced prediction
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 5:
+Premise: Three individuals are wearing tight blue nylon suits with one instructor in all black with a ponytail assisting them with putting on harnesses.
+Hypothesis: Three individuals are wearing tight blue nylon suits outside.
+Gold Label: 1
+Baseline: 0 (conf: 0.547)
+Debiased: 1 (conf: 0.784)
+Why Baseline Failed: Length difference of 14 words may have biased the model; High lexical overlap (0.89) likely influenced prediction
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 6:
+Premise: A man in a denim shirt and pants is smoking a cigarette while playing a cello for money.
+Hypothesis: A man in denim shirt is smoking marbellos.
+Gold Label: 1
+Baseline: 2 (conf: 0.467)
+Debiased: 1 (conf: 0.631)
+Why Baseline Failed: Length difference of 10 words may have biased the model; High lexical overlap (0.88) likely influenced prediction
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 7:
+Premise: A man in a blue shirt, khaki shorts, ball cap and white socks and loafers walking behind a group of people walking down a stone walkway with a water bottle in his left hand.
+Hypothesis: A man in a blue shirt, khaki shorts, ball cap and blue socks and loafers walking behind a group of people walking down a stone walkway with a water bottle in his left hand.
+Gold Label: 2
+Baseline: 0 (conf: 0.917)
+Debiased: 2 (conf: 0.967)
+Why Baseline Failed: High lexical overlap (1.00) likely influenced prediction; Hypothesis words being subset of premise may have caused bias
+Why Debiased Succeeded: Model correctly focused on semantic meaning despite high overlap
+
+--------------------------------------------------------------------------------
+Example 8:
+Premise: A brown dog with a blue muzzle is running on green grass.
+Hypothesis: A dog is wearing a green muzzle on blue grass.
+Gold Label: 2
+Baseline: 0 (conf: 0.950)
+Debiased: 2 (conf: 0.986)
+Why Baseline Failed: High lexical overlap (0.89) likely influenced prediction
+Why Debiased Succeeded: Model correctly focused on semantic meaning despite high overlap
+
+--------------------------------------------------------------------------------
+Example 9:
+Premise: Three sisters, barefoot in pink dresses and who range in age from preschool to teenager are pictured on a beach as they look out at the Ocean.
+Hypothesis: Three sisters, barefoot in pink dresses and who range in age from preschool to 90
+Gold Label: 2
+Baseline: 1 (conf: 0.939)
+Debiased: 2 (conf: 0.616)
+Why Baseline Failed: Length difference of 12 words may have biased the model; High lexical overlap (0.93) likely influenced prediction
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------

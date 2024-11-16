@@ -1,0 +1,17 @@
+[
+  {
+    "premise": "A man in a blue shirt, khaki shorts, ball cap and white socks and loafers walking behind a group of people walking down a stone walkway with a water bottle in his left hand.",
+    "hypothesis": "A man in a blue shirt, khaki shorts, ball cap and blue socks and loafers walking behind a group of people walking down a stone walkway with a water bottle in his left hand.",
+    "gold_label": 2,
+    "baseline_pred": 0,
+    "baseline_conf": 0.9165183305740356,
+    "debiased_pred": 2,
+    "debiased_conf": 0.9672236442565918,
+    "baseline_error": "High lexical overlap (1.00) likely influenced prediction; Hypothesis words being subset of premise may have caused bias",
+    "debiased_success": "Model correctly focused on semantic meaning despite high overlap",
+    "length_bias": false,
+    "overlap_bias": true,
+    "subset_bias": true,
+    "negation_bias": false
+  }
+]

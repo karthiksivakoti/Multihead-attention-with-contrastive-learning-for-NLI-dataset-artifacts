@@ -1,0 +1,202 @@
+Top 20 Improvements for length_bias
+
+Example 1:
+Premise: A large black dog and a small brown dog are playing in the house.
+Hypothesis: The dogs are playing in the yard.
+Gold Label: 2
+Baseline: 0 (conf: 0.378)
+Debiased: 2 (conf: 0.986)
+Why Baseline Failed: Length difference of 7 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 2:
+Premise: A man with a white shirt and blue jeans are skating on a skating device.
+Hypothesis: The man has shorts on.
+Gold Label: 2
+Baseline: 1 (conf: 0.412)
+Debiased: 2 (conf: 0.978)
+Why Baseline Failed: Length difference of 10 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 3:
+Premise: Woman wearing a red sweater, brown slacks and a white hat, rollerblading on the street in front of a yellow building.
+Hypothesis: This woman is indoors.
+Gold Label: 2
+Baseline: 0 (conf: 0.458)
+Debiased: 2 (conf: 0.998)
+Why Baseline Failed: Length difference of 17 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 4:
+Premise: A young man in black pants and a gray shirt holds a skateboard with colorful decals upright while sitting on a gray stone block.
+Hypothesis: The person is seated on a rock.
+Gold Label: 0
+Baseline: 2 (conf: 0.450)
+Debiased: 0 (conf: 0.988)
+Why Baseline Failed: Length difference of 17 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 5:
+Premise: A man in a green shirt and black hat is smoothing concrete.
+Hypothesis: The man is drilling into concrete.
+Gold Label: 2
+Baseline: 1 (conf: 0.454)
+Debiased: 2 (conf: 0.982)
+Why Baseline Failed: Length difference of 6 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 6:
+Premise: An Asian man attempting to repair a green bicycle outdoors while two other Asian men stand by.
+Hypothesis: Just a bike
+Gold Label: 2
+Baseline: 0 (conf: 0.423)
+Debiased: 2 (conf: 0.952)
+Why Baseline Failed: Length difference of 14 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 7:
+Premise: A man in a black shirt painting a duplicate copy of another painting hanging in an art gallery.
+Hypothesis: The man is taking a photograph at the art gallery.
+Gold Label: 2
+Baseline: 1 (conf: 0.451)
+Debiased: 2 (conf: 0.980)
+Why Baseline Failed: Length difference of 8 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 8:
+Premise: A woman wearing a scarf, hat, and coat, holding a shopping bag is looking at her phone while standing in front of a store.
+Hypothesis: The woman is inside the store browsing.
+Gold Label: 2
+Baseline: 0 (conf: 0.452)
+Debiased: 2 (conf: 0.972)
+Why Baseline Failed: Length difference of 17 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 9:
+Premise: a lone motorcyclist jumping through the air in front of a large crowd.
+Hypothesis: The person is riding a horse.
+Gold Label: 2
+Baseline: 0 (conf: 0.482)
+Debiased: 2 (conf: 0.998)
+Why Baseline Failed: Length difference of 7 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 10:
+Premise: Several people wait to checkout inside a store with a warehouse looking ceiling.
+Hypothesis: an elevator being serviced
+Gold Label: 2
+Baseline: 0 (conf: 0.451)
+Debiased: 2 (conf: 0.964)
+Why Baseline Failed: Length difference of 9 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 11:
+Premise: A young child, wearing a pink-polkadotted outfit, smiles at the camera as she lays on a white, shaggy rug.
+Hypothesis: the child is in stripe,
+Gold Label: 2
+Baseline: 1 (conf: 0.425)
+Debiased: 2 (conf: 0.937)
+Why Baseline Failed: Length difference of 14 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 12:
+Premise: An Asian woman stands along a road where 2 buses have passed holding her bags.
+Hypothesis: The woman is american.
+Gold Label: 2
+Baseline: 1 (conf: 0.486)
+Debiased: 2 (conf: 0.996)
+Why Baseline Failed: Length difference of 11 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 13:
+Premise: Dog running down paved walkway near a Japanese maple tree.
+Hypothesis: A pitbull running outside.
+Gold Label: 1
+Baseline: 0 (conf: 0.470)
+Debiased: 1 (conf: 0.978)
+Why Baseline Failed: Length difference of 6 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 14:
+Premise: A young man with blond dreadlocks sits on a wall reading a newspaper as a woman and a young girl pass by.
+Hypothesis: A young male is looking at a newspaper while 2 females walks past him.
+Gold Label: 0
+Baseline: 2 (conf: 0.440)
+Debiased: 0 (conf: 0.946)
+Why Baseline Failed: Length difference of 8 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 15:
+Premise: A group of teenagers are standing in front of some tents, most of them are holding skateboards.
+Hypothesis: A group of teenagers are jumping
+Gold Label: 2
+Baseline: 0 (conf: 0.452)
+Debiased: 2 (conf: 0.953)
+Why Baseline Failed: Length difference of 11 words may have biased the model; High lexical overlap (0.83) likely influenced prediction
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 16:
+Premise: A male child with blond-hair, green eyes, and a sticky looking mouth wearing a multicolored t-shirt has his hand wrapped around a popsicle stick and is chewing and has it inserted into his mouth where you can see 4 bright white teeth on the bottom row.
+Hypothesis: The male child is eating a popsicle.
+Gold Label: 0
+Baseline: 2 (conf: 0.376)
+Debiased: 0 (conf: 0.874)
+Why Baseline Failed: Length difference of 39 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 17:
+Premise: A person in a blue plaid shirt is writing on a chalkboard.
+Hypothesis: The person is reading a book.
+Gold Label: 2
+Baseline: 1 (conf: 0.501)
+Debiased: 2 (conf: 0.991)
+Why Baseline Failed: Length difference of 6 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 18:
+Premise: Two indian men are dancing in suits with an indian woman in a colorful dress behind them by a brick wall.
+Hypothesis: Some people wait in line.
+Gold Label: 2
+Baseline: 1 (conf: 0.475)
+Debiased: 2 (conf: 0.948)
+Why Baseline Failed: Length difference of 16 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 19:
+Premise: Three Oklahoma Sooners playing football against another team, one of the sooners with the ball in their possession.
+Hypothesis: A group of bears are playing a football game.
+Gold Label: 2
+Baseline: 0 (conf: 0.514)
+Debiased: 2 (conf: 0.983)
+Why Baseline Failed: Length difference of 9 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
+Example 20:
+Premise: A man is walking in the same direction that a model airplane is flying in dried grassland.
+Hypothesis: A man is following a remote control airplane.
+Gold Label: 1
+Baseline: 0 (conf: 0.451)
+Debiased: 1 (conf: 0.918)
+Why Baseline Failed: Length difference of 9 words may have biased the model
+Why Debiased Succeeded: Debiased model successfully ignored length difference
+
+--------------------------------------------------------------------------------
