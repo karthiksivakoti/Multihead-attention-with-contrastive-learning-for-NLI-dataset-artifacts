@@ -21,13 +21,13 @@ This repository implements a novel multi-head debiasing architecture for Natural
 ## Results 📈
 
 <p align="center">
-  <img src="research_analysis/figures/training_metrics.png" alt="Training Metrics" width="600"/>
+  <img src="research_analysis/combined_bias_analysis.png" alt="Training Metrics" width="600"/>
   <br>
-  <em>Training and validation metrics showing consistent improvement across epochs</em>
+  <em>Combined bias analysis per dataset artifact type</em>
 </p>
 
 <p align="center">
-  <img src="research_analysis/figures/confusion_matrix.png" alt="Confusion Matrix" width="600"/>
+  <img src="research_analysis/confusion_matrix_all.png" alt="Confusion Matrix" width="600"/>
   <br>
   <em>Confusion matrix demonstrating improved prediction accuracy</em>
 </p>
