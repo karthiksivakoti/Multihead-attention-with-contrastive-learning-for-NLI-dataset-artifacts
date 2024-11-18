@@ -40,3 +40,13 @@ Bias Type Improvements:
 - Overlap:   +1.36%
 - Subset:    +1.11%
 - Negation:  +6.71%
+```
+## Examples of debiased model across artifact types
+```
+| Example | Premise                                                                                                                            | Hypothesis                                             | Gold Label | Baseline               | Debiased               |
+|---------|------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|------------|------------------------|------------------------|
+| 1       | A large black dog and a small brown dog are playing in the house.                                                                  | The dogs are playing in the yard.                      | 2          | 0 (conf: 0.917)        | 2 (conf: 0.967)        |
+| 2       | A young man in black pants and a gray shirt holds a skateboard with colorful decals upright while sitting on a gray stone block.   | The person is seated on a rock.                        | 0          | 2 (conf: 0.450)        | 0 (conf: 0.988)        |
+| 3       | Three people are outside walking up a set of wooden stairs.                                                                        | Three people are walking outside down a set of stairs. | 2          | 0 (conf: 0.424)        | 2 (conf: 0.830)        |
+| 4       | A football team getting ready for the coin toss in a half empty stadium.                                                           | The stadium is not full.                               | 0          | 2 (conf: 0.680)        | 0 (conf: 0.948)        |
+```
