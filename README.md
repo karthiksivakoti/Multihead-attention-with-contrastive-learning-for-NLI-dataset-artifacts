@@ -1,7 +1,10 @@
 # NLI Dataset Artifact Analysis and Debiasing using multi-artifact attention 🔍
 
+[![NLP](https://img.shields.io/badge/NLP-%23BF5700.svg?style=for-the-badge&logo=Neuron&logoColor=white)](https://www.cs.utexas.edu/research/natural-language-processing)
 [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)](https://pytorch.org/)
-[![Python](https://img.shields.io/badge/python-3.8+-blue.svg?style=for-the-badge)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/python-3.12+-blue.svg?style=for-the-badge)](https://www.python.org/)
+[![ELECTRA](https://img.shields.io/badge/ELECTRA-%234CAF50.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)](https://github.com/google-research/electra)
+[![SNLI Dataset](https://img.shields.io/badge/SNLI%20Dataset-%232F80ED.svg?style=for-the-badge&logo=OpenAI&logoColor=white)](https://nlp.stanford.edu/projects/snli/)
 
 ## Overview 📊
 
