@@ -41,7 +41,7 @@ Bias Type Improvements:
 - Subset:    +1.11%
 - Negation:  +6.71%
 ```
-## Examples of debiased model across artifact types
+## Examples of debiased model across artifact types 🔭
 ```
 | Example | Premise                                                                                                                            | Hypothesis                                             | Gold Label | Baseline               | Debiased               |
 |---------|------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|------------|------------------------|------------------------|
